@@ -60,22 +60,22 @@ When a new Customer makes an appointment, admin have to add the customer to cust
 
   <h3>Adding the items to the stock</h3>
 
-![alt text](https:Customer Management//github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/stock1.PNG)
+![alt text](https://github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/stock1.PNG)
 
 
 <h3>Showing the summary to the admin<h3>
   
   
-![alt text](https:Customer Management//github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/stock2.PNG)
+![alt text](https://github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/stock2.PNG)
 
 <h3>Update delete stock from the system<h3>
  
-![alt text](https:Customer Management//github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/stock3.PNG)
+![alt text](https://github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/stock3.PNG)
   
   
   <h3>Showing the category availability using the pie chart<h3>
   
-  ![alt text](https:Customer Management//github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/stock4.PNG)
+  ![alt text](https://github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/stock4.PNG)
   
   
   Thank you.....
