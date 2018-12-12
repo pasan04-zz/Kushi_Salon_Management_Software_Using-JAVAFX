@@ -1,17 +1,18 @@
 # Kushi_Salon_Management_Software_Using-JAVAFX
 
-<h2>Introduction<h2>
+<h2>Introduction</h2>
 We have implemented desktop application according to our client’s requirements, that is Kushi bridle and beauty salon which  is one of the most popular salon in nugegoda. We have implemented  the main 8 functions and integrate as a whole system.
 The 8 main functions  we have implemented are-
-            1.Package Management
-            2.Appointment Management
-            3.stock Management
-            4.Employee Management
-            5.Customer Management
-            6.Payment Management
-            7.Dealer Management
-            8.Financial Management
-  
+        <ul>   
+            <li>  1.Package Management </li>
+            <li>  2.Appointment Management </li>
+            <li>3.stock Management </li>
+            <li>4.Employee Management</li>
+            <li>5.Customer Management</li>
+            <li>6.Payment Management</li>
+            <li>7.Dealer Management</li>
+            <li>8.Financial Management</li>
+         </ul>   
 <h2>Package Management</h2>
 
 There are 2 sub functions in the package Management. They are add service and add Package. In the add service function the admin can add a service by filling the form . After that , admin can update, delete , view the details of the inserted record via a table. And can generate a  report  for the services. Also in the add package function the admin can add a package by filling the form. Then the admin can update, delete, view the package details and generate report for packages.
