@@ -27,7 +27,7 @@ If the customer is a registered member she can continue her appointment or else 
 ![alt text](https://github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/appointment.PNG)
 
 
-<h2>Payment Management System<h2>
+<h2>Payment Management System</h2>
   
   When a customer placed a payment for an appointment, they will get an invoice by an email for that particular payment that she has done. The appointment details and the payment details are shown in the payment management via a table. Insert, update and delete a particular payment is accomplished and can generate a report as monthly-based, weekly-based, yearly-based, daily-based, or custom as which the admin is prefers to.
   
@@ -42,17 +42,19 @@ Employee Management function can add a new employee by filling the employee deta
 <h2>Dealer Management</h2>
 Insert, update , delete and view dealer information are accomplished through this function. When a new dealer agreed to sell their products to our salon the admin can keep a record about that dealer by giving company name, company address, company email, product type, company phone number, agent name, agent phone number. Admin can update the database when a dealer changed his name or changed his place or price etc. And also he/she can delete if the particular record is not needed anymore. Dealer information can be viewed via a table as well as can generate a report for a dealer management.
 
-![alt text](https:Customer Management//github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/suppliers.PNG)
+![alt text](https://github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/suppliers.PNG)
 
 
 <h2>Customer Management</h2>
 When a new Customer makes an appointment, admin have to add the customer to customer management database by giving her Id, NIC, first name, last name, email, address, phone number, and age. Here insert, update, delete functions are accomplished. And can view customer details via a table and can generate a report as well.
 
-![alt text](https:Customer Management//github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/customer.PNG)
+![alt text](https://github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/customer.PNG)
 
  <h2>Financial management</h2>
  
  Financial Management consists of income, expense, bank account details and profit/loss. Income can be calculated and managed from the appointments and the sales of products. The expenses like buying salon products from dealers and other expense such as salary should be maintained. From all these expense and income the admin wants to calculate the profit or the loss gained.  Bank accounts can be maintained. Insert, update, delete functions are accomplished. And can view the details via a table. And also can generate a report for each month.
+
+![alt text]( https://github.com/pasan04/Kushi_Salon_Management_Software_Using-JAVAFX/blob/master/finance.PNG)
  
  <h2>Stock Management</h2>
  Stock management form Keeps track of cosmetics information of the salon such as date, bill, supplier, category, name, quantity, and price. And categorize the cosmetics as shampoo, conditioner, jewelry and record the stock which is needed by the salon. The admin can view the item information’s via a table. He/she can update, insert and delete the particular record and can generate a report which in result leads to assume that what amount of products should be ordered in next months.
