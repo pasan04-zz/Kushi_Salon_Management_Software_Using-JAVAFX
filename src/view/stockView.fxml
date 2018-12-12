@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="978.0" prefWidth="1705.0" style="-fx-background-color: #1F1C2C;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.stockViewController">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="1712.0">
+         <children>
+            <HBox layoutY="1.0" prefHeight="114.0" prefWidth="1710.0" spacing="3.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="226.0" style="-fx-background-color: #00008B;" text="STOCK" textFill="#f5eeee">
+                     <font>
+                        <Font size="35.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="218.0" style="-fx-background-color: #006400;" text="APPOINTMENT" textFill="#fff0f0">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="218.0" style="-fx-background-color: #006400;" text="CUSTOMER" textFill="#e1dbdb">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="208.0" style="-fx-background-color: #006400;" text="PACKAGES" textFill="#ebe9e9">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="210.0" style="-fx-background-color: #006400;" text="EMPLOYEE" textFill="#fff9f9">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="213.0" style="-fx-background-color: #006400;" text="FINANACE" textFill="#f2e6e6">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="216.0" style="-fx-background-color: #006400;" text="SUPPLERS" textFill="#fff1f1">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" prefHeight="114.0" prefWidth="211.0" style="-fx-background-color: #006400;" text="HOME" textFill="#fff3f3">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1.0" layoutY="129.0" prefHeight="74.0" prefWidth="1710.0" style="-fx-background-color: #1E90FF;">
+         <children>
+            <Text layoutX="-21.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOCK MANAGEMENT" textAlignment="CENTER" wrappingWidth="444.60595703125">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fill="#fcfcfc" layoutX="130.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FINANCIAL STATISTICS" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#fcfcfc" layoutX="135.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIEW STOCK" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="addNew" layoutX="282.0" layoutY="433.0" mnemonicParsing="false" onAction="#stockmain" prefHeight="44.0" prefWidth="243.0" style="-fx-background-color: #00008B;" text="+ADD NEW ITEMS" textFill="#fff8f8" />
+      <Button fx:id="search" layoutX="1164.0" layoutY="435.0" mnemonicParsing="false" onAction="#onSearch" prefHeight="37.0" prefWidth="144.0" style="-fx-background-color: #00008B;" text="SEARCH" textFill="#fff6f6" />
+      <TextField fx:id="search_txt" layoutX="1339.0" layoutY="435.0" prefHeight="21.0" prefWidth="189.0" promptText="Search By ID">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Button fx:id="additem" layoutX="140.0" layoutY="278.0" mnemonicParsing="false" onAction="#additems" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="ADD ITEMS" textFill="#fffdfd" />
+      <Button fx:id="view" layoutX="388.0" layoutY="278.0" mnemonicParsing="false" onAction="#viewCategory" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="CATEGORY" textFill="#f8f5f5" />
+      <Button fx:id="calcProducts" layoutX="628.0" layoutY="278.0" mnemonicParsing="false" onAction="#calculateNoOfProducts" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="SUMMARY" textFill="#f8eeee" />
+      <Button fx:id="updatedelete" layoutX="1340.0" layoutY="278.0" mnemonicParsing="false" onAction="#updateDelete" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="UPDATE | DELETE" textFill="#fcfcfc" />
+      <Separator layoutX="140.0" layoutY="355.0" prefHeight="21.0" prefWidth="1392.0" />
+      <TableView fx:id="tableView" accessibleRole="TEXT_FIELD" layoutX="119.0" layoutY="546.0" prefHeight="414.0" prefWidth="1392.0">
+         <columns>
+            <TableColumn fx:id="bill12" prefWidth="75.0" text="Bill ID" />
+            <TableColumn fx:id="name12" prefWidth="169.0" text="Product Name" />
+            <TableColumn fx:id="categ12" prefWidth="117.0" text="Category" />
+            <TableColumn fx:id="qty12" prefWidth="165.0" text="Quantity" />
+            <TableColumn fx:id="price12" prefWidth="261.0" text="Price" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="notification" layoutX="868.0" layoutY="278.0" mnemonicParsing="false" onAction="#notificationAction" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="NOTIFICATIONS" textFill="#f8f0f0" />
+      <Button fx:id="report" layoutX="1103.0" layoutY="278.0" mnemonicParsing="false" onAction="#createReport" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="REPORT" textFill="#e8e8e8" />
+   </children>
+</AnchorPane>

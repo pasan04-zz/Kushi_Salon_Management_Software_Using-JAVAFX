@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="978.0" prefWidth="1705.0" style="-fx-background-color: #1F1C2C;" stylesheets="@RegistrationCascadeStyleSheet.css" AnchorPane.rightAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DealerRegistrationController">
+    <children>
+      <Label alignment="CENTER" layoutX="190.0" layoutY="288.0" text="Dealer ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="191.0" layoutY="403.0" text="Company Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="190.0" layoutY="474.0" text="Company Email" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="606.0" text="Company Phone Number" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="192.0" layoutY="675.0" text="Agent Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="187.0" layoutY="746.0" text="Agent Phone Number" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <TextField fx:id="txxtaddress" layoutX="549.0" layoutY="403.0" onKeyTyped="#labelNull" prefHeight="31.0" prefWidth="338.0" />
+      <TextField fx:id="txtemail" layoutX="549.0" layoutY="474.0" onKeyTyped="#labelNull" prefHeight="31.0" prefWidth="338.0" />
+      <TextField fx:id="txtphno" layoutX="555.0" layoutY="606.0" onKeyTyped="#labelNull" prefHeight="31.0" prefWidth="338.0" />
+      <TextField fx:id="txtname" layoutX="553.0" layoutY="675.0" onKeyTyped="#labelNull" prefHeight="31.0" prefWidth="338.0" />
+      <TextField fx:id="txtphno2" layoutX="553.0" layoutY="743.0" onKeyTyped="#labelNull" prefHeight="31.0" prefWidth="338.0" />
+      
+      <Button fx:id="submit" alignment="CENTER" layoutX="361.0" layoutY="837.0" mnemonicParsing="false" onAction="#submit_button_Action" prefHeight="56.0" prefWidth="188.0" style="-fx-background-color: #006400;" text="Submit" textFill="#e4e3e3">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+      <Label layoutX="122.0" layoutY="241.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePick" layoutX="186.0" layoutY="234.0" />
+      <Label alignment="CENTER" layoutX="188.0" layoutY="350.0" text="Company Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtcmpname" layoutX="549.0" layoutY="340.0" onKeyTyped="#labelNull" prefHeight="31.0" prefWidth="338.0" />
+      <Button fx:id="load" layoutX="122.0" layoutY="837.0" mnemonicParsing="false" onAction="#load_button_Action" prefHeight="56.0" prefWidth="188.0" style="-fx-background-color: #006400;" text="View Dealers" textFill="#f2ecec">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button fx:id="exit" alignment="CENTER" layoutX="604.0" layoutY="837.0" mnemonicParsing="false" onAction="#exit_button_Action" prefHeight="56.0" prefWidth="195.0" style="-fx-background-color: red;" text="Exit" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Label layoutX="189.0" layoutY="539.0" text="Product Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chkSkin" layoutX="553.0" layoutY="544.0" mnemonicParsing="false" onAction="#CheckBoxSkin" text="Skin" textFill="#f2f2f2" />
+      <CheckBox fx:id="chkHair" layoutX="634.0" layoutY="544.0" mnemonicParsing="false" onAction="#CheckBoxHair" text="Hair" textFill="#eed0d0" />
+      <CheckBox fx:id="chkEyes" layoutX="702.0" layoutY="544.0" mnemonicParsing="false" onAction="#CheckBoxEyes" text="Eyes" textFill="WHITE" />
+      <CheckBox fx:id="chkFace" layoutX="770.0" layoutY="544.0" mnemonicParsing="false" onAction="#CheckBoxFace" text="Face" textFill="WHITE" />
+      <CheckBox fx:id="chkNails" layoutX="832.0" layoutY="544.0" mnemonicParsing="false" onAction="#CheckBoxNails" text="Nails" textFill="WHITE" />
+      <Label fx:id="lblName" layoutX="549.0" layoutY="371.0" onKeyPressed="#labelNull" prefHeight="17.0" prefWidth="259.0" textFill="#e81414" />
+      <Label fx:id="lblAddress" layoutX="549.0" layoutY="439.0" onKeyPressed="#labelNull" prefHeight="17.0" prefWidth="259.0" textFill="#e81414" />
+      <Label fx:id="lblEmail" layoutX="549.0" layoutY="512.0" onKeyPressed="#labelNull" prefHeight="17.0" prefWidth="259.0" textFill="#e81414" />
+      <Label fx:id="lblPhone1" layoutX="549.0" layoutY="644.0" onKeyPressed="#labelNull" prefHeight="17.0" prefWidth="259.0" textFill="#e81414" />
+      <Label fx:id="lblAgtName" layoutX="549.0" layoutY="712.0" onKeyPressed="#labelNull" prefHeight="17.0" prefWidth="259.0" textFill="#e81414" />
+      <Label fx:id="lblPhone2" layoutX="561.0" layoutY="783.0" prefHeight="17.0" prefWidth="259.0" textFill="#e81414" />
+      <Button fx:id="demo" alignment="CENTER" layoutX="854.0" layoutY="837.0" mnemonicParsing="false" onAction="#demo_button_Action" prefHeight="56.0" prefWidth="188.0" style="-fx-background-color: #006400;" text="Demo" textFill="#fff6f6">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <AnchorPane layoutX="-1.0" layoutY="124.0" prefHeight="74.0" prefWidth="1710.0" style="-fx-background-color: #1E90FF;">
+         <children>
+            <Text layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer Registration Form" textAlignment="CENTER" wrappingWidth="444.60595703125">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="-1.0" layoutY="-2.0" prefHeight="114.0" prefWidth="1712.0">
+         <children>
+            <HBox layoutY="7.0" prefHeight="114.0" prefWidth="1719.0" spacing="3.0">
+               <children>
+                  <Button fx:id="dealer" mnemonicParsing="false" onAction="#clickDealer" prefHeight="114.0" prefWidth="208.0" style="-fx-background-color: #1E90FF;" text="DEALER" textFill="#e1dede">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="appointment" mnemonicParsing="false" onAction="#clickAppointment" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="APPOINTMENT" textFill="#d7d6d6">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="customer" mnemonicParsing="false" onAction="#clickCustomer" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="CUSTOMER" textFill="#d7d6d6">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="packages" mnemonicParsing="false" onAction="#clickPackages" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="PACKAGES" textFill="#d7d6d6">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="employee" mnemonicParsing="false" onAction="#clickEmployee" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="EMPLOYEE" textFill="#d7d6d6">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="payment" mnemonicParsing="false" onAction="#clickPayment" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="PAYEMENT" textFill="#d7d6d6">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="finance" mnemonicParsing="false" onAction="#clickFinance" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="FINANCE" textFill="#d7d6d6">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="stock" mnemonicParsing="false" onAction="#clickStock" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="STOCK" textFill="#d7d6d6">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Label fx:id="lblProd" layoutX="552.0" layoutY="570.0" onMouseClicked="#labelNull" prefHeight="17.0" prefWidth="259.0" textFill="#e81414" />
+      <Label fx:id="lblID" layoutX="560.0" layoutY="288.0" prefHeight="31.0" prefWidth="85.0" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      
+    </children>
+</AnchorPane>

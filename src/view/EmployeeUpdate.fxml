@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="978.0" prefWidth="1705.0" style="-fx-background-color: #1F1C2C;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EmployeeUpdateController">
+   <children>
+      <Label layoutX="308.0" layoutY="258.0" prefHeight="54.0" prefWidth="306.0" text="Update Employee Details" textFill="#db3b09">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <TableView fx:id="employeeTable" layoutX="438.0" layoutY="341.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#showOnClick" prefHeight="491.0" prefWidth="1207.0" AnchorPane.topAnchor="341.0">
+        <columns>
+          <TableColumn fx:id="columnEid" prefWidth="84.0" text="Employee ID" />
+          <TableColumn fx:id="columnFirstName" prefWidth="99.0" text="First Name" />
+            <TableColumn fx:id="columnLastName" prefWidth="102.0" text="Last Name" />
+            <TableColumn fx:id="columnNIC" prefWidth="108.0" text="NIC" />
+            <TableColumn fx:id="columnEmail" prefWidth="133.0" text="Email" />
+            <TableColumn fx:id="columnPhone" prefWidth="105.0" text="Phone" />
+            <TableColumn fx:id="columnAddress" minWidth="0.0" prefWidth="85.0" text="Address" />
+            <TableColumn fx:id="columnhireDate" prefWidth="105.0" text="Hired Date" />
+            <TableColumn fx:id="columngender" prefWidth="75.0" text="Gender" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="btnUpdate" layoutX="582.0" layoutY="855.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #00008B;" styleClass="resetButtonSave" stylesheets="@../CSS/updateemployee.css" text="UPDATE" textFill="#fffefe">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <GridPane layoutX="85.0" layoutY="412.0" prefHeight="306.0" prefWidth="269.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="93.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="152.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="First Name" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+            <Label text="Last Name" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+            <Label text="NIC" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+            <TextField fx:id="firstNameText" GridPane.columnIndex="1" />
+            <TextField fx:id="lastNameText" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="NICText" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Email" textFill="WHITE" GridPane.rowIndex="3">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+            <TextField fx:id="emailText" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Phone" textFill="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+            <Label text="Address" textFill="WHITE" GridPane.rowIndex="5">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+            <TextField fx:id="PhoneText" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="addressText" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnDelete" layoutX="808.0" layoutY="855.0" mnemonicParsing="false" onAction="#deleteEmp" prefHeight="49.0" prefWidth="152.0" style="-fx-background-color: red;" styleClass="resetButtonReset" stylesheets="@../CSS/updateemployee.css" text="DELETE" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <TextField fx:id="searchTxt" layoutX="1438.0" layoutY="280.0" onInputMethodTextChanged="#searchEmp" onKeyReleased="#searchEmp" prefHeight="25.0" prefWidth="199.0" promptText="Search Employee" />
+      <Button fx:id="btnSave" layoutX="144.0" layoutY="855.0" mnemonicParsing="false" onAction="#insertEmployee" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #006400;" styleClass="resetButtonSave" stylesheets="@../CSS/updateemployee.css" text="SAVE" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btnReset" layoutX="362.0" layoutY="855.0" mnemonicParsing="false" onAction="#resetButton" prefHeight="49.0" prefWidth="152.0" style="-fx-background-color: yellow;" styleClass="resetButtonReset" stylesheets="@../CSS/updateemployee.css" text="RESET">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <ImageView fitHeight="153.0" fitWidth="167.0" layoutX="118.0" layoutY="219.0">
+         <image>
+            <Image url="@../images/social-people-icon-5%20(1).png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="female" layoutX="109.0" layoutY="781.0" mnemonicParsing="false" text="Female" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="male" layoutX="109.0" layoutY="724.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </RadioButton>
+      <Pane layoutY="-7.0" prefHeight="114.0" prefWidth="1712.0">
+         <children>
+            <HBox layoutX="1.0" layoutY="6.0" prefHeight="114.0" prefWidth="1710.0" spacing="3.0">
+               <children>
+                  <Button fx:id="employee" mnemonicParsing="false" onAction="#clickEmployee" prefHeight="114.0" prefWidth="208.0" style="-fx-background-color: #00008B;" text="EMPLOYEE" textFill="#eeecec">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="appointment" mnemonicParsing="false" onAction="#clickAppointment" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="APPOINTMENT" textFill="#fffbfb">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="customer" mnemonicParsing="false" onAction="#clickCustomer" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="CUSTOMER" textFill="#fffbfb">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="finance" mnemonicParsing="false" onAction="#clickFinance" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="FINANCE" textFill="#fffbfb">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="stock" mnemonicParsing="false" onAction="#clickStock" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="STOCK" textFill="#fffbfb">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="dealer" mnemonicParsing="false" onAction="#clickDealer" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="SUPPLIERS" textFill="#fffbfb">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="payment" mnemonicParsing="false" onAction="#clickPayment" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="PAYMENT" textFill="#fffbfb">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="packages" mnemonicParsing="false" onAction="#clickPackages" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="PACKAGES" textFill="#fffbfb">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="1.0" layoutY="124.0" prefHeight="74.0" prefWidth="1710.0" style="-fx-background-color: #1E90FF;">
+         <children>
+            <Text layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EMPLOYEE MANAGEMENT" textAlignment="CENTER" wrappingWidth="444.60595703125">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

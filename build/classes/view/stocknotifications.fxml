@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="633.0" prefWidth="696.0" style="-fx-background-color: #1F1C2C;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.stockNotificationsController">
+   <children>
+      <Text fill="WHITE" layoutX="65.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTIFICATIONS" underline="true" wrappingWidth="200.3447265625">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="note3" fill="#c30000" layoutX="65.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="590.6708984375">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="note1" fill="#d30505" layoutX="65.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="590.6709015369415">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="note4" fill="#eb0404" layoutX="65.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="590.6709015369415">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="note2" fill="#e40505" layoutX="65.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="590.6709015369415">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="ok" layoutX="284.0" layoutY="491.0" mnemonicParsing="false" onAction="#actionOk" prefHeight="53.0" prefWidth="138.0" style="-fx-background-color: #006400;" text="OK" textFill="#fcf2f2">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Text fx:id="note5" fill="#d00000" layoutX="65.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="596.6709053516388">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="note6" fill="#f8f1f1" layoutX="65.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="607.6709053516388">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

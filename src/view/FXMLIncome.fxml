@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="957.0" prefWidth="1711.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLIncomeController">
+   <children>
+      <ScrollPane prefHeight="999.0" prefWidth="1711.0" />
+      <AnchorPane prefHeight="978.0" prefWidth="1705.0" style="-fx-background-color: #1F1C2C;">
+         <children>
+            <HBox prefHeight="114.0" prefWidth="1710.0" spacing="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+               <children>
+                  <Button fx:id="finance" mnemonicParsing="false" onAction="#clickFinance" prefHeight="114.0" prefWidth="254.0" style="-fx-background-color: #1E90FF;" text="FINANCE" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnAppointmentUI" mnemonicParsing="false" onAction="#viewAppointmentUIb" prefHeight="114.0" prefWidth="252.0" style="-fx-background-color: #006400;" text="APPOINTMENT" textFill="#fffafa">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCustomerUI" mnemonicParsing="false" onAction="#viewCustomerUIb" prefHeight="114.0" prefWidth="252.0" style="-fx-background-color: #006400;" text="CUSTOMER" textFill="#fffafa">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnPackageUI" mnemonicParsing="false" onAction="#viewPackageUIb" prefHeight="114.0" prefWidth="252.0" style="-fx-background-color: #006400;" text="PACKAGES" textFill="#fffafa">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnPaymentUI" mnemonicParsing="false" onAction="#viewPaymentUIb" prefHeight="114.0" prefWidth="252.0" style="-fx-background-color: #006400;" text="PAYEMENT" textFill="#fffafa">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEmployeeUI" mnemonicParsing="false" onAction="#viewEmployeeUIb" prefHeight="114.0" prefWidth="252.0" style="-fx-background-color: #006400;" text="EMPLOYEE" textFill="#fffafa">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSuppllierUI" mnemonicParsing="false" onAction="#viewSupplierUIb" prefHeight="114.0" prefWidth="252.0" style="-fx-background-color: #006400;" text="SUPPLIERS" textFill="#e4e4e4">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnStockUI" layoutX="1479.0" layoutY="10.0" mnemonicParsing="false" onAction="#viewStockUIb" prefHeight="114.0" prefWidth="252.0" style="-fx-background-color: #006400;" text="STOCK" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <AnchorPane layoutY="125.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="1711.0" style="-fx-background-color: #1E90FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Text layoutX="34.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FINANCIAL MANAGEMENT" textAlignment="CENTER" wrappingWidth="444.60595703125">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Button fx:id="Button1" layoutX="233.0" layoutY="304.0" mnemonicParsing="false" onAction="#incomeAction" prefHeight="57.0" prefWidth="179.0" style="-fx-background-color: #00008B;" text="INCOME" textFill="WHITE" />
+            <Button fx:id="Button2" layoutX="781.0" layoutY="308.0" mnemonicParsing="false" onAction="#PTAction" prefHeight="55.0" prefWidth="185.0" style="-fx-background-color: #00008B;" text="PROFIT/LOSE" textFill="WHITE" />
+            <Button fx:id="Button3" layoutX="1066.0" layoutY="309.0" mnemonicParsing="false" onAction="#bankAction" prefHeight="55.0" prefWidth="167.0" style="-fx-background-color: #00008B;" text="BANK ACCOUNTS" textFill="WHITE" />
+            <Button fx:id="Button4" layoutX="501.0" layoutY="304.0" mnemonicParsing="false" onAction="#expanseAction" prefHeight="57.0" prefWidth="186.0" style="-fx-background-color: #00008B;" text="EXPANSE" textFill="WHITE" />
+            <Button fx:id="Button5" layoutX="1370.0" layoutY="307.0" mnemonicParsing="false" onAction="#reportAction" prefHeight="57.0" prefWidth="160.0" style="-fx-background-color: #00008B;" text="REPORT" textFill="WHITE" />
+            <Separator layoutX="171.0" layoutY="380.0" prefHeight="22.0" prefWidth="1438.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="427.0" prefHeight="77.0" prefWidth="232.0" text="TOTAL INCOME" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" underline="true">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="154.0" layoutY="517.0" prefHeight="68.0" prefWidth="373.0" text="APPOINTEMENT INCOME" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="154.0" layoutY="592.0" prefHeight="68.0" prefWidth="373.0" text="SALSE INCOME" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="app" layoutX="657.0" layoutY="532.0" prefHeight="39.0" prefWidth="253.0" />
+            <TextField fx:id="sale" layoutX="657.0" layoutY="607.0" prefHeight="39.0" prefWidth="251.0" />
+            <Button fx:id="Button6" layoutX="507.0" layoutY="531.0" mnemonicParsing="false" onAction="#appAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #006400;" text="INCOME" textFill="WHITE" />
+            <Button fx:id="Button7" layoutX="507.0" layoutY="606.0" mnemonicParsing="false" onAction="#salseAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #006400;" text="INCOME" textFill="WHITE" />
+            <Label layoutX="154.0" layoutY="683.0" prefHeight="68.0" prefWidth="373.0" text="TOTAL INCOME" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tIncome" layoutX="657.0" layoutY="687.0" prefHeight="39.0" prefWidth="248.0" />
+            <TableView fx:id="table" layoutX="928.0" layoutY="449.0" prefHeight="468.0" prefWidth="767.0">
+               <columns>
+                  <TableColumn fx:id="appi" prefWidth="232.53338623046875" text="APPOINTEMENT INCOME" />
+                  <TableColumn fx:id="salei" prefWidth="240.5333251953125" text="SALSE INCOME" />
+                  <TableColumn fx:id="tot" prefWidth="235.4666748046875" text="TOTAL INCOME" />
+               </columns>
+            </TableView>
+            <Button fx:id="Button8" layoutX="507.0" layoutY="686.0" mnemonicParsing="false" onAction="#calAction" prefHeight="41.0" prefWidth="127.0" style="-fx-background-color: #006400;" text="CALCULATE" textFill="WHITE" />
+            <Button fx:id="Button9" layoutX="450.0" layoutY="818.0" mnemonicParsing="false" onAction="#loadTAction" prefHeight="41.0" prefWidth="192.0" style="-fx-background-color: #00008B;" text="LOAD TABLE" textFill="#f5ebeb" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

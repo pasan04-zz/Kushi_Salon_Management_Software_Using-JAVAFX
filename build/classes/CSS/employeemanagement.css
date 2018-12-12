@@ -1,0 +1,31 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.employeeManagementbkgnd{
+    -fx-background-color: linear-gradient(to right,#3C3B3F,#605C3C);
+}
+
+.addNewEmployee{
+    -fx-background-color: linear-gradient(to right,#3C3B3F,#605C3C);
+}
+
+.viewEmpProfile{
+    -fx-background-color: linear-gradient(to right,#3C3B3F,#605C3C);
+}
+
+.updateEmployee{
+    -fx-background-color: linear-gradient(to right,#3C3B3F,#605C3C);
+}
+
+.removeEmployee{
+    -fx-background-color: linear-gradient(to right,#3C3B3F,#605C3C);
+}
+
+.salaryDetails{
+    -fx-background-color: linear-gradient(to right,#3C3B3F,#605C3C);
+}
+
+.attendanceDetails{
+    -fx-background-color: linear-gradient(to right,#3C3B3F,#605C3C);
+}

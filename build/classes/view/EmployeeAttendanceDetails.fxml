@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="978.0" prefWidth="1705.0" style="-fx-background-color: #1F1C2C;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EmployeeAttendanceController">
+    <stylesheets>
+        <URL value="@/CSS/attendancedetails.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="searchText" layoutX="1241.0" layoutY="233.0" onInputMethodTextChanged="#searchEmp" onKeyReleased="#searchEmp" prefHeight="31.0" prefWidth="230.0" promptText="Employee Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="990.0" layoutY="890.0" mnemonicParsing="false" onAction="#save" prefHeight="44.0" prefWidth="195.0" style="-fx-background-color: #006400;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <TableView fx:id="employeeTable" layoutX="338.0" layoutY="299.0" prefHeight="568.0" prefWidth="1133.0">
+        <columns>
+          <TableColumn fx:id="columnEid" prefWidth="346.0" text="Employee ID" />
+          <TableColumn fx:id="columnFirstName" prefWidth="347.0" text="First Name" />
+            <TableColumn fx:id="columnLastName" prefWidth="439.0" text="Last Name" />
+        </columns>
+      </TableView>
+      <RadioButton fx:id="present" layoutX="554.0" layoutY="896.0" mnemonicParsing="false" text="Present" textFill="#ffeded">
+         <font>
+            <Font size="22.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="absent" layoutX="774.0" layoutY="896.0" mnemonicParsing="false" text="Absent" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font></RadioButton>
+      <Button fx:id="salaryCalc" layoutX="1269.0" layoutY="890.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="195.0" style="-fx-background-color: #00008B;" text="Calculate Salary" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Pane prefHeight="114.0" prefWidth="1712.0">
+         <children>
+            <HBox layoutY="7.0" prefHeight="114.0" prefWidth="1710.0" spacing="3.0">
+               <children>
+                  <Button fx:id="employee" mnemonicParsing="false" onAction="#clickEmployee" prefHeight="114.0" prefWidth="208.0" style="-fx-background-color: #00008B;" text="EMPLOYEE" textFill="#eeeeee">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="appointment" mnemonicParsing="false" onAction="#clickAppointment" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="APPOINTMENT" textFill="#f5efef">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="customer" mnemonicParsing="false" onAction="#clickCustomer" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="CUSTOMER" textFill="#f5efef">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="packages" mnemonicParsing="false" onAction="#clickPackages" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="PACKAGES" textFill="#f5efef">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="payment" mnemonicParsing="false" onAction="#clickPayment" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="PAYEMENT" textFill="#f5efef">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="finance" mnemonicParsing="false" onAction="#clickFinance" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="FINANCE" textFill="#f5efef">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="stock" mnemonicParsing="false" onAction="#clickStock" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="STOCK" textFill="#f5efef">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="dealer" mnemonicParsing="false" onAction="#clickDealer" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="SUPPLIER" textFill="#f5efef">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="1.0" layoutY="134.0" prefHeight="74.0" prefWidth="1710.0" style="-fx-background-color: #1E90FF;">
+         <children>
+            <Text layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATTENDANCE DETAILS" textAlignment="CENTER" wrappingWidth="444.60595703125">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

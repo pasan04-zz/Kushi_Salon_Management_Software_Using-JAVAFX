@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.customerDeleteController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" prefHeight="972.0" prefWidth="1689.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="-10.0" layoutY="-16.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="978.0" prefWidth="1699.0" style="-fx-background-color: #1F1C2C;">
+               <children>
+                  <Text fill="#fcfcfc" layoutX="146.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDIT CUSTOMERS" underline="true">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="8.0" layoutY="14.0" prefHeight="111.0" prefWidth="1689.0">
+                     <children>
+                        <HBox layoutX="-6.0" prefHeight="114.0" prefWidth="1699.0" spacing="4.0">
+                           <children>
+                              <Button fx:id="customer" mnemonicParsing="false" onAction="#clickCustomer" prefHeight="114.0" prefWidth="229.0" style="-fx-background-color: #00008B;" text="CUSTOMER" textFill="#f5eaea">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="appointment" mnemonicParsing="false" onAction="#clickAppointment" prefHeight="114.0" prefWidth="234.0" style="-fx-background-color: #006400;" text="APPOINTMENT" textFill="#fcf8f8">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="stock" mnemonicParsing="false" onAction="#clickStock" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="STOCK" textFill="#fff3f3">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="packages" mnemonicParsing="false" onAction="#clickPackages" prefHeight="114.0" prefWidth="187.0" style="-fx-background-color: #006400;" text="PACKAGES" textFill="WHITE">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="employee" mnemonicParsing="false" onAction="#clickEmployee" prefHeight="114.0" prefWidth="195.0" style="-fx-background-color: #006400;" text="EMPLOYEE" textFill="#fffefe">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="finance" mnemonicParsing="false" onAction="#clickFinance" prefHeight="114.0" prefWidth="216.0" style="-fx-background-color: #006400;" text="FINANCE" textFill="#fffbfb">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="dealer" mnemonicParsing="false" onAction="#clickDealer" prefHeight="114.0" prefWidth="254.0" style="-fx-background-color: #006400;" text="SUPPLIERS" textFill="#fcf1f1">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="payment" mnemonicParsing="false" onAction="#clickPayment" prefHeight="114.0" prefWidth="269.0" style="-fx-background-color: #006400;" text="PAYMENT" textFill="WHITE">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="4.0" layoutY="135.0" prefHeight="74.0" prefWidth="1699.0" style="-fx-background-color: #1E90FF;">
+                     <children>
+                        <Text layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER MANAGEMENT" textAlignment="CENTER" wrappingWidth="444.60595703125">
+                           <font>
+                              <Font name="System Bold" size="33.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="fname" layoutX="478.0" layoutY="415.0" prefHeight="31.0" prefWidth="222.0" />
+                  <TextField fx:id="lname" layoutX="478.0" layoutY="464.0" prefHeight="31.0" prefWidth="222.0" />
+                  <TextField fx:id="add" layoutX="1191.0" layoutY="372.0" />
+                  <TextField fx:id="pno" layoutX="1191.0" layoutY="418.0" />
+                  <Text fill="#e1dbdb" layoutX="270.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME" wrappingWidth="196.6708984375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#c9c9c9" layoutX="274.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME" wrappingWidth="169.6708984375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#d0cece" layoutX="921.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADDRESS" wrappingWidth="196.67089976370335">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#c9c9c9" layoutX="921.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NUMBER" wrappingWidth="169.6708984375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="update" layoutX="1424.0" layoutY="666.0" mnemonicParsing="false" onAction="#updateCustomer" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #006400;" text="UPDATE" textFill="#e8e8e8" />
+                  <Button fx:id="delete" layoutX="1424.0" layoutY="741.0" mnemonicParsing="false" onAction="#deleteCustomer" prefHeight="44.0" prefWidth="130.0" style="-fx-background-color: red;" text="DELETE" textFill="#fff9f9" />
+                  <TextField fx:id="nic" editable="false" layoutX="478.0" layoutY="363.0" prefHeight="31.0" prefWidth="222.0" />
+                  <Text fill="#e1dbdb" layoutX="274.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC" wrappingWidth="196.6708984375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#c9c9c9" layoutX="921.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AGE" wrappingWidth="169.6708984375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="age" layoutX="1191.0" layoutY="464.0" />
+                  <TableView fx:id="tableview" editable="true" layoutX="328.0" layoutY="516.0" onMouseClicked="#showOnClick" prefHeight="436.0" prefWidth="1050.0">
+                     <columns>
+                        <TableColumn fx:id="cnic" prefWidth="104.99996948242188" text="NIC" />
+                        <TableColumn fx:id="cfname" prefWidth="121.0" text="FIRST NAME" />
+                        <TableColumn fx:id="clname" prefWidth="128.0" text="LAST NAME" />
+                        <TableColumn fx:id="cadd" prefWidth="131.0" text="ADDRESS" />
+                        <TableColumn fx:id="cpno" prefWidth="166.0" text="PHONE NUMBER" />
+                        <TableColumn fx:id="cage" prefWidth="182.0" text="AGE" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="addCust" layoutX="397.0" layoutY="244.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="54.0" prefWidth="197.0" style="-fx-background-color: #00008B;" text="ADD CUSTOMERS" textFill="#f2e0e0" />
+                  <Separator layoutX="211.0" layoutY="307.0" prefHeight="21.0" prefWidth="1359.0" />
+                  <Button fx:id="calcCust" layoutX="1060.0" layoutY="242.0" mnemonicParsing="false" onAction="#calculateNoCustomers" prefHeight="57.0" prefWidth="169.0" style="-fx-background-color: #00008B;" text="NO OF CUSTOMERS" textFill="WHITE" />
+                  <Button fx:id="load" layoutX="1424.0" layoutY="588.0" mnemonicParsing="false" onAction="#loadTbl" prefHeight="44.0" prefWidth="130.0" style="-fx-background-color: #00008B;" text="LOAD TABLE" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

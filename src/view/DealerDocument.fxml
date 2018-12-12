@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="ProAnchor" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLDocumentController">
+   <children>
+      <ProgressIndicator fx:id="Prog" layoutX="96.0" layoutY="60.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="100.0" progress="0.0" />
+   </children>
+</AnchorPane>

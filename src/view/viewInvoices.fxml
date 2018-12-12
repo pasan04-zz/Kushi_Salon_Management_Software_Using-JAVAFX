@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="978.0" prefWidth="1705.0" style="-fx-background-color: #1F1C2C;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewInvoicesController">
+   <children>
+      <JFXTreeTableView fx:id="paymentTable" layoutX="844.0" layoutY="400.0" prefHeight="525.0" prefWidth="827.0" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="844.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="400.0">
+        <columns>
+          <TreeTableColumn fx:id="colpayID" prefWidth="112.0" text="Payment id" />
+          <TreeTableColumn fx:id="colfname" prefWidth="110.0" text="First Name" />
+          <TreeTableColumn fx:id="collname" prefWidth="103.0" text="Last Name" />
+          <TreeTableColumn fx:id="colappointmentID" prefWidth="116.0" text="Appointment ID" />
+          <TreeTableColumn fx:id="coldate" prefWidth="91.0" text="Date" />
+          <TreeTableColumn fx:id="coltime" prefWidth="132.0" sortable="false" text="Time" />
+          <TreeTableColumn fx:id="coltotal" prefWidth="162.0" text="Total" />
+        </columns>
+      </JFXTreeTableView>
+      <BarChart fx:id="barChart" layoutX="58.0" layoutY="394.0" prefHeight="555.0" prefWidth="679.0" AnchorPane.topAnchor="394.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label fx:id="invoices" layoutX="126.0" layoutY="286.0" text="No.of Invoice" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="income" layoutX="1398.0" layoutY="283.0" text="Total Income" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="report" buttonType="RAISED" layoutX="863.0" layoutY="276.0" onAction="#showPopUp" prefHeight="44.0" prefWidth="182.0" ripplerFill="RED" style="-fx-background-color: #00008B;" text="GENARATE REPORT" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="1125.0" layoutY="276.0" onAction="#deletePayment" prefHeight="44.0" prefWidth="182.0" ripplerFill="DARKBLUE" style="-fx-background-color: red;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></JFXButton>
+      <HBox layoutX="8.0" layoutY="11.0" prefHeight="112.0" prefWidth="1699.0" spacing="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <JFXButton fx:id="btnPaymentUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewPaymentUIb" prefHeight="114.0" prefWidth="222.0" style="-fx-background-color: #1E90FF;" text="PAYEMENT" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="finance" buttonType="RAISED" mnemonicParsing="false" onAction="#clickFinance" prefHeight="114.0" prefWidth="165.0" style="-fx-background-color: #006400;" text="FINANCE" textFill="#fcf5f5">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnStockUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewStockUIb" prefHeight="114.0" prefWidth="198.0" style="-fx-background-color: #006400;" text="STOCK" textFill="#f2f2f2">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnAppointmentUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewAppointmentUIb" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #006400;" text="APPOINTMENT" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnCustomerUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewCustomerUIb" prefHeight="114.0" prefWidth="214.0" style="-fx-background-color: #006400;" text="CUSTOMER" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnPackageUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewPackageUIb" prefHeight="114.0" prefWidth="219.0" style="-fx-background-color: #006400;" text="PACKAGES" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnEmployeeUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewEmployeeUIb" prefHeight="114.0" prefWidth="219.0" style="-fx-background-color: #006400;" text="EMPLOYEE" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnSuppllierUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewSupplierUIb" prefHeight="112.0" prefWidth="213.0" style="-fx-background-color: #006400;" text="SUPPLIERS" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+      <AnchorPane layoutY="130.0" prefHeight="70.0" prefWidth="1705.0" style="-fx-background-color: #1E90FF;" AnchorPane.bottomAnchor="778.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="130.0">
+         <children>
+            <Text layoutX="37.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAYMENT MANAGEMENT -[PAYMENT REPORT]" textAlignment="CENTER" wrappingWidth="835.60595703125" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="832.39404296875">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="txtKey" layoutX="1024.0" layoutY="19.0" prefHeight="44.0" prefWidth="230.0" promptText="search..." unFocusColor="BLACK" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="26.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnAddPaymentUI" buttonType="RAISED" layoutX="325.0" layoutY="275.0" onAction="#viewAddPaymentUI" prefHeight="45.0" prefWidth="182.0" ripplerFill="RED" style="-fx-background-color: #00008B;" text="ADD PAYMENT" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="173.0" layoutY="347.0" prefHeight="21.0" prefWidth="1315.0" AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="217.0" />
+      <JFXButton fx:id="btnViewSummary" buttonType="RAISED" layoutX="599.0" layoutY="275.0" onAction="#viewSummary" prefHeight="45.0" prefWidth="182.0" ripplerFill="RED" style="-fx-background-color: #00008B;" text="VIEW SUMMARY" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

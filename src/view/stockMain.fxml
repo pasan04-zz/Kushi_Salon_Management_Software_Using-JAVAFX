@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="978.0" prefWidth="1705.0" style="-fx-background-color: #1F1C2C;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.stockMainController">
+    <children>
+      <AnchorPane prefHeight="114.0" prefWidth="1712.0">
+         <children>
+            <HBox prefHeight="114.0" prefWidth="1710.0" spacing="3.0">
+               <children>
+                  <Button fx:id="stock" mnemonicParsing="false" onAction="#clickStock" prefHeight="114.0" prefWidth="208.0" style="-fx-background-color: #00008B;" text="STOCK" textFill="#f2f2f2">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="appointment" mnemonicParsing="false" onAction="#clickAppointment" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="APPOINTMENT" textFill="#fffafa">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button fx:id="customer" mnemonicParsing="false" onAction="#clickCustomer" prefHeight="114.0" prefWidth="214.0" style="-fx-background-color: #006400;" text="CUSTOMER" textFill="#fffafa">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button fx:id="packages" mnemonicParsing="false" onAction="#clickPackages" prefHeight="114.0" prefWidth="219.0" style="-fx-background-color: #006400;" text="PACKAGES" textFill="#fffafa">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button fx:id="payment" mnemonicParsing="false" onAction="#clickPayment" prefHeight="114.0" prefWidth="222.0" style="-fx-background-color: #006400;" text="PAYEMENT" textFill="#fffafa">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button fx:id="employee" mnemonicParsing="false" onAction="#clickEmployee" prefHeight="114.0" prefWidth="219.0" style="-fx-background-color: #006400;" text="EMPLOYEE" textFill="#fffafa">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="dealer" mnemonicParsing="false" onAction="#clickDealer" prefHeight="114.0" prefWidth="200.0" style="-fx-background-color: #006400;" text="SUPPLIERS" textFill="#fffafa">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button fx:id="finance" mnemonicParsing="false" onAction="#clickFinance" prefHeight="114.0" prefWidth="208.0" style="-fx-background-color: #006400;" text="FINANCE" textFill="#fcf5f5">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1.0" layoutY="122.0" prefHeight="74.0" prefWidth="1710.0" style="-fx-background-color: #1E90FF;">
+         <children>
+            <Text layoutX="-21.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOCK MANAGEMENT" textAlignment="CENTER" wrappingWidth="444.60595703125">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fill="#fcfcfc" layoutX="135.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FINANCIAL STATISTICS" underline="true">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#fcfcfc" layoutX="135.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PURCHASE STOCK" underline="true">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Separator layoutX="135.0" layoutY="378.0" prefHeight="21.0" prefWidth="1391.0" />
+      <Text fill="#fffefe" layoutX="246.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase Date">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#fffefe" layoutX="245.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Number">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#fffefe" layoutX="242.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#fffefe" layoutX="360.0" layoutY="822.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#fffefe" layoutX="242.0" layoutY="763.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name ">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#fffefe" layoutX="714.0" layoutY="822.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#fffefe" layoutX="1019.0" layoutY="822.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price Per Item">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bill" editable="false" layoutX="457.0" layoutY="588.0" prefHeight="31.0" prefWidth="217.0" />
+      <TextField fx:id="qty" layoutX="651.0" layoutY="839.0" prefHeight="31.0" prefWidth="214.0" promptText="Quantity" />
+      <TextField fx:id="price" layoutX="987.0" layoutY="839.0" prefHeight="31.0" prefWidth="204.0" promptText="Price" />
+      <Button fx:id="button" layoutX="539.0" layoutY="909.0" onAction="#handleButtonAction" prefHeight="48.0" prefWidth="225.0" style="-fx-background-color: #006400;" text="SAVE" textFill="#f8f8f8">
+         <font>
+            <Font size="22.0" />
+         </font></Button>
+      <Button fx:id="stock1" layoutX="135.0" layoutY="297.0" mnemonicParsing="false" onAction="#stockView" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="STOCK VIEW" textFill="WHITE" />
+      <Button fx:id="categoryview" layoutX="379.0" layoutY="297.0" mnemonicParsing="false" onAction="#viewCategory" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="CATEGORY" textFill="#fffbfb" />
+      <Button fx:id="calcProducts" layoutX="621.0" layoutY="297.0" mnemonicParsing="false" onAction="#calculateNoOfProducts" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="SUMMARY" textFill="WHITE" />
+      <DatePicker fx:id="datepick" layoutX="459.0" layoutY="513.0" prefHeight="31.0" prefWidth="214.0" promptText="Pick the date" />
+      <ComboBox fx:id="comboBox1" layoutX="458.0" layoutY="666.0" prefHeight="31.0" prefWidth="214.0" promptText="Select Supplier" visibleRowCount="20" />
+      <ComboBox fx:id="comboBox2" accessibleRole="CHECK_BOX" layoutX="299.0" layoutY="839.0" prefHeight="31.0" prefWidth="214.0" promptText="Select Category" />
+      <Button fx:id="updatedelete" layoutX="1339.0" layoutY="297.0" mnemonicParsing="false" onAction="#updateDelete" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="UPDATE | DELETE" textFill="#fceeee" />
+      <TextField fx:id="name" layoutX="457.0" layoutY="738.0" prefHeight="31.0" prefWidth="214.0" promptText="Product1 Name" />
+      <Button fx:id="notification" layoutX="865.0" layoutY="297.0" mnemonicParsing="false" onAction="#notificationAction" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="NOTIFICATIONS" textFill="#fcf7f7" />
+      <Label fx:id="pdate" layoutX="459.0" layoutY="552.0" prefHeight="21.0" prefWidth="212.0" textFill="#f20707" />
+      <Label fx:id="pname" layoutX="459.0" layoutY="776.0" prefHeight="21.0" prefWidth="212.0" textFill="#f20707" />
+      <Label fx:id="psupplier" layoutX="460.0" layoutY="705.0" prefHeight="21.0" prefWidth="212.0" textFill="#f20707" />
+      <Label fx:id="pqty" layoutX="652.0" layoutY="879.0" prefHeight="21.0" prefWidth="212.0" textFill="#f20707" />
+      <Label fx:id="pprice" layoutX="992.0" layoutY="879.0" prefHeight="21.0" prefWidth="212.0" textFill="#f20707" />
+      <Button fx:id="dealer2" layoutX="1111.0" layoutY="297.0" mnemonicParsing="false" onAction="#clickDealer2" prefHeight="63.0" prefWidth="187.0" style="-fx-background-color: #00008B;" text="ADD SUPPLER" textFill="WHITE" />
+    </children>
+</AnchorPane>

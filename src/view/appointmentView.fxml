@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="978.0" prefWidth="1705.0" style="-fx-background-color: #1F1C2C #1F1C2C;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.appointmentViewController">
+   <children>
+      <TableView fx:id="AppointView" layoutX="254.0" layoutY="412.0" prefHeight="519.0" prefWidth="1179.0" AnchorPane.leftAnchor="254.0" AnchorPane.rightAnchor="272.0">
+        <columns>
+          <TableColumn fx:id="apID" prefWidth="66.0" text="AppointID" />
+          <TableColumn fx:id="date2" prefWidth="82.0" text="Date" />
+            <TableColumn fx:id="time2" prefWidth="76.0" text="Time" />
+            <TableColumn fx:id="emp2" prefWidth="73.0" text="employee" />
+            <TableColumn fx:id="cid2" prefWidth="46.0" text="custID" />
+            <TableColumn fx:id="cName2s" prefWidth="70.0" text="custName" />
+            <TableColumn fx:id="cAddress2" prefWidth="82.0" text="custAddress" />
+            <TableColumn fx:id="Tel2" prefWidth="64.0" text="TeleNum" />
+            <TableColumn fx:id="ser2" prefWidth="63.0" text="services" />
+            <TableColumn fx:id="pack2" minWidth="0.0" prefWidth="74.0" text="packages" />
+            <TableColumn fx:id="tot2" prefWidth="61.0" text="total" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="AddApoint" buttonType="RAISED" layoutX="246.0" layoutY="241.0" mnemonicParsing="false" onAction="#AddApoint" prefHeight="44.0" prefWidth="207.0" style="-fx-background-color: #00008B;" text="ADD APPOINTMENT" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font></JFXButton>
+      <TextField fx:id="txtSearch" layoutX="1313.0" layoutY="345.0" onKeyReleased="#txtSearch" prefHeight="25.0" prefWidth="120.0" AnchorPane.rightAnchor="272.0" />
+      <Text fx:id="search2" fill="WHITE" layoutX="1214.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" AnchorPane.rightAnchor="421.7880859375">
+         <font>
+            <Font name="Rockwell" size="22.0" />
+         </font></Text>
+      <JFXButton fx:id="exit" buttonType="RAISED" layoutX="1274.0" layoutY="241.0" mnemonicParsing="false" onAction="#exitBtn" prefHeight="44.0" prefWidth="186.0" style="-fx-background-color: red;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="report" buttonType="RAISED" layoutX="583.0" layoutY="241.0" mnemonicParsing="false" onAction="#report" prefHeight="44.0" prefWidth="200.0" style="-fx-background-color: #00008B;" text="GENARATE REPORT" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="del_col" buttonType="RAISED" layoutX="922.0" layoutY="241.0" mnemonicParsing="false" onAction="#del_col" prefHeight="44.0" prefWidth="186.0" style="-fx-background-color: red;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="18.0" />
+         </font>
+      </JFXButton>
+      <HBox layoutX="48.0" layoutY="51.0" prefHeight="114.0" prefWidth="1719.0" spacing="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <JFXButton fx:id="btnAppointmentUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewAppointmentUIb" prefHeight="114.0" prefWidth="238.0" style="-fx-background-color: #1E90FF;" text="APPOINTMENT" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="finance" buttonType="RAISED" mnemonicParsing="false" onAction="#clickFinance" prefHeight="114.0" prefWidth="196.0" style="-fx-background-color: #006400;" text="FINANCE" textFill="#fcf5f5">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnStockUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewStockUIb" prefHeight="114.0" prefWidth="198.0" style="-fx-background-color: #006400;" text="STOCK" textFill="#f2f2f2">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnCustomerUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewCustomerUIb" prefHeight="114.0" prefWidth="214.0" style="-fx-background-color: #006400;" text="CUSTOMER" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnPackageUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewPackageUIb" prefHeight="114.0" prefWidth="219.0" style="-fx-background-color: #006400;" text="PACKAGES" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnPaymentUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewPaymentUIb" prefHeight="114.0" prefWidth="222.0" style="-fx-background-color: #006400;" text="PAYEMENT" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnEmployeeUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewEmployeeUIb" prefHeight="114.0" prefWidth="219.0" style="-fx-background-color: #006400;" text="EMPLOYEE" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnSuppllierUI" buttonType="RAISED" mnemonicParsing="false" onAction="#viewSupplierUIb" prefHeight="114.0" prefWidth="200.0" style="-fx-background-color: #006400;" text="SUPPLIERS" textFill="#fffafa">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+      <AnchorPane layoutY="131.0" prefHeight="74.0" prefWidth="1710.0" style="-fx-background-color: #1E90FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="131.0">
+         <children>
+            <Text layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APPOINTMENT MANAGEMENT  - [VIEW APPOINTMENT]" textAlignment="CENTER" wrappingWidth="1040.60595703125" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="650.0">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="193.0" layoutY="301.0" prefHeight="21.0" prefWidth="1319.0" AnchorPane.leftAnchor="193.0" AnchorPane.rightAnchor="193.0" />
+   </children>
+</AnchorPane>

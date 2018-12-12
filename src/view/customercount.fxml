@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.customercountController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="count" layoutX="-24.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="978.0" prefWidth="1729.0" style="-fx-background-color: #1F1C2C;">
+         <children>
+            <AnchorPane layoutX="14.0" prefHeight="114.0" prefWidth="1400.0">
+               <children>
+                  <HBox layoutY="8.0" prefHeight="114.0" prefWidth="1712.0" spacing="3.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="113.0" prefWidth="201.0" style="-fx-background-color: #00008B;" text="CUSTOMER" textFill="WHITE">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="stock" mnemonicParsing="false" onAction="#clickStock" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="STOCK" textFill="#fffafa">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="appointment" mnemonicParsing="false" onAction="#clickAppointment" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="APPOINTMENT" textFill="#fffafa">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="payment" mnemonicParsing="false" onAction="#clickPayment" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="PAYEMENT" textFill="#fffafa">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="employee" mnemonicParsing="false" onAction="#clickEmployee" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="EMPLOYEE" textFill="#fffafa">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="dealer" mnemonicParsing="false" onAction="#clickDealer" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="SUPPLIERS" textFill="#fffafa">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="finance" mnemonicParsing="false" onAction="#clickFinance" prefHeight="114.0" prefWidth="217.0" style="-fx-background-color: #006400;" text="FINANCE" textFill="#fff7f7">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="packages" mnemonicParsing="false" onAction="#clickPackages" prefHeight="114.0" prefWidth="197.0" style="-fx-background-color: #006400;" text="PACKAGES" textFill="#fffafa">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="24.0" layoutY="133.0" prefHeight="74.0" prefWidth="1705.0" style="-fx-background-color: #1E90FF;">
+               <children>
+                  <Text layoutX="8.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER MANAGEMENT" textAlignment="CENTER" wrappingWidth="444.60595703125">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text fill="#fffefe" layoutX="613.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Count  :">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <TextField fx:id="count12" layoutX="865.0" layoutY="440.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="225.0" promptText="Customer Count" />
+            <Button fx:id="cont" layoutX="705.0" layoutY="507.0" mnemonicParsing="false" onAction="#count" onMouseClicked="#count" prefHeight="96.0" prefWidth="239.0" style="-fx-background-color: #00008B;" text="Count" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
